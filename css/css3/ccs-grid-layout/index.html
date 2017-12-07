@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            display:grid;
+            grid-template-areas:
+                "header header header"
+                "aside main main"
+                "footer footer footer";   
+            grid-gap: 1rem;   
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto 100vh auto;  
+        }
+
+        .o-cabecalho {
+            grid-area: header;
+        }
+
+        .o-lateral {
+            grid-area: aside;
+        }
+
+        .o-centro {
+            grid-area: main;
+        }
+
+        .o-rodape {
+            grid-area: footer;
+        }        
+
+        .o-cabecalho, .o-lateral, .o-centro, .o-rodape {
+            background: rgb(95, 126, 194);
+            color: #FDFDFD;
+        }        
+    </style>
+</head>
+<body>
+    <header class="o-cabecalho">Cabeçalho</header>
+    <aside class="o-lateral">Lateral</aside>
+    <main class="o-centro">Centro</main>
+    <footer class="o-rodape">Rodapé</footer>
+</body>
+</html>
