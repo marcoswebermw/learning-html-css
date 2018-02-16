@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elemento Dialog</title>
+</head>
+<body>
+    <dialog id="cx_dialog">
+        <h1>Olá Mundo!!</h1>
+        <button id="fechar_modal">Fechar Modal</button>
+    </dialog>
+
+    <button id="abrir">Abrir</button>
+    <button id="abrir_modal">Abrir Modals</button>
+    <button id="fechar">Fechar</button>
+
+    <script>
+        const caixa_dialog = document.querySelector("#cx_dialog")
+
+        document.querySelector("#abrir").addEventListener("click", () => {caixa_dialog.show();});
+        document.querySelector("#abrir_modal").addEventListener("click", () => {caixa_dialog.showModal();});
+        document.querySelector("#fechar").addEventListener("click", () => {caixa_dialog.close();});
+        document.querySelector("#fechar_modal").addEventListener("click", () => {caixa_dialog.close();});
+    </script>
+
+</body>
+</html>
